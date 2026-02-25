@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Workshop List</title>
+
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+
+<div class="admin-layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <img src="assest/report.png" alt="Logo">
+      <span>WorkshopHub</span>
+    </div>
+
+    <nav class="sidebar-menu">
+      <a href="DashAdmin.html">
+        <img src="assest/laptop.png" alt="Dashboard Icon" />
+        <span>Dashboard Admin</span>
+      </a>
+      <a class="active" href="WorkshopList.html">
+        <img src="assest/list--boxes.png" alt="Workshop List Icon" />
+        <span>Workshop List</span>
+      </a>
+      <a href="DataPeserta.html">
+        <img src="assest/user--identification.png" alt="Data Peserta Icon" />
+        <span>Data Peserta</span>
+      </a>
+      <a href="PesertaWorkshop.html">
+        <img src="assest/tool-box.png" alt="Peserta Workshop Icon" />
+        <span>Peserta Workshop</span>
+      </a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <span class="page-title">Hallo Admin</span>
+
+      <div class="topbar-user">
+        <div class="user-badge">
+          <img src="assest/user.png" alt="User">
+          <span>Admin</span>
+        </div>
+
+        <a href="index.html" class="logout-btn">
+          <img src="assest/Span.png" alt="Logout">
+          <span>Keluar</span>
+        </a>
+      </div>
+    </header>
+
+    <section class="content">
+
+      <h1 class="content-title">Workshop List</h1>
+
+
+      <div class="workshop-grid">
+        <div class="workshop-card">
+          <div class="card-actions">
+            <a href="editList.html" class="action-btn">
+              <img src="assest/edit.png" alt="edit" />
+            </a>
+
+            <a href="javascript:void(0)"
+              class="action-btn"
+              onclick="hapusWorkshop('workshop-1', 'Cloud Architecture')">
+              <img src="assest/trash-can.png" alt="delete">
+            </a>
+          </div>
+
+          <h2 class="workshop-title">Cloud Architecture</h2>
+          <p class="workshop-desc">
+            Perancangan struktur sistem cloud untuk memastikan performa dan keandalan aplikasi.
+          </p>
+
+          <ul class="workshop-info">
+            <li>
+              <img src="assest/tgl.png" />
+              10 Oktober 2025
+            </li>
+            <li>
+              <img src="assest/waktu.png" />
+              09:00 - 11:00 WIB
+            </li>
+            <li>
+              <img src="assest/link.png" />
+              Online via Zoom
+            </li>
+            <li>
+              <img src="assest/jml.png" />
+              45 / 50 Peserta
+            </li>
+          </ul>
+        </div>
+
+        <a href="addList.html" class="workshop-add">
+          +
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

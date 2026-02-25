@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard Peserta</title>
+
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="peserta.css" />
+</head>
+<body>
+
+<div class="dashboard">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <img src="assest/report.png" alt="Logo" />
+      <span>WorkshopHub</span>
+    </div>
+
+    <nav class="sidebar-menu">
+      <a href="DashPeserta.html">
+        <img src="assest/laptop.png" alt="Dashboard Icon" />
+        <span>Dashboard Peserta</span>
+      </a>
+      <a class="active" href="workPeserta.html">
+        <img src="assest/list--boxes.png" alt="Workshop List Icon" />
+        <span>Workshop List</span>
+      </a>
+      <a href="profil.html">
+        <img src="assest/user.png" alt="Profil Icon" />
+        <span>Profil</span>
+      </a>
+    </nav>
+  </aside>
+
+  <main class="main">
+
+    <header class="topbar">
+      <span class="page-title">Halo {{nama_peserta}}</span>
+
+      <div class="topbar-user">
+        <div class="user-badge">
+          <img src="assest/user.png" alt="User">
+          <span>Peserta</span>
+        </div>
+
+        <a href="index.html" class="logout-btn">
+          <img src="assest/Span.png" alt="Logout">
+          <span>Keluar</span>
+        </a>
+      </div>
+    </header>
+
+    <section class="content">
+
+      <section class="summary">
+        <div class="card">
+          <div class="card-top">
+            <p>Workshop Terdaftar</p>
+            <div class="card-icon blue">
+                <img src="assest/jml work peserta.png" alt="workshop terdaftar" />
+            </div>
+          </div>
+          <h2 id="totalWorkshop" class="card-value">0</h2>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <p>Tanggal Workshop Terdekat</p>
+            <div class="card-icon blue">
+                <img src="assest/work terdekat.png" alt="workshop terdaftar" />
+            </div>
+          </div>
+          <h2 id="tanggal_workshop" class="card-value">10 Oktober 2025</h2>
+        </div>
+    </section>
+
+      <section class="workshops">
+
+        <div class="workshop-card">
+          <span class="badge sold">Sold</span>
+
+          <h2 class="workshop-title">Cloud Architecture</h2>
+          <p class="workshop-desc">
+            Perancangan struktur sistem cloud untuk memastikan performa dan keandalan aplikasi.
+          </p>
+
+          <ul class="workshop-info">
+            <li>
+                <img src="assest/tgl.png" alt="Tanggal" />
+                <span>10 Oktober 2025</span>
+            </li>
+            <li>
+                <img src="assest/waktu.png" alt="Waktu" />
+                <span>09:00 - 11:00 WIB</span>
+            </li>
+            <li>
+                <img src="assest/link.png" alt="Lokasi" />
+                <span>Online via Zoom</span>
+            </li>
+            <li>
+                <img src="assest/jml.png" alt="Peserta" />
+                <span>45 / 50 Peserta</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="workshop-card">
+          <span class="badge available">Tersedia</span>
+        
+          <h2 class="workshop-title">Cloud Storage & Database</h2>
+          <p class="workshop-desc">
+            Teknik menyimpan dan mengelola data di cloud secara aman dan fleksibel.
+          </p>
+
+          <ul class="workshop-info">
+            <li>
+                <img src="assest/tgl.png" alt="Tanggal" />
+                <span>10 Oktober 2025</span>
+            </li>
+            <li>
+                <img src="assest/waktu.png" alt="Waktu" />
+                <span>09:00 - 11:00 WIB</span>
+            </li>
+            <li>
+                <img src="assest/link.png" alt="Lokasi" />
+                <span>Online via Zoom</span>
+            </li>
+            <li>
+                <img src="assest/jml.png" alt="Peserta" />
+                <span>45 / 50 Peserta</span>
+            </li>
+          </ul>
+
+          <button class="btn-daftar" onclick="daftarWorkshop('Cloud Storage & Database')">
+            Daftar Workshop
+          </button>
+        </div>
+
+      </section>
+
+    </section>
+  </main>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

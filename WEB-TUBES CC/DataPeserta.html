@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="admin.css" />
+  <title>Data Peserta</title>
+</head>
+
+<body>
+  <div class="layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <img src="assest/report.png" alt="Logo">
+      <span>WorkshopHub</span>
+    </div>
+
+    <nav class="sidebar-menu">
+      <a href="DashAdmin.html">
+        <img src="assest/laptop.png" alt="Dashboard Icon" />
+        <span>Dashboard Admin</span>
+      </a>
+      <a href="WorkshopList.html">
+        <img src="assest/list--boxes.png" alt="Workshop List Icon" />
+        <span>Workshop List</span>
+      </a>
+      <a class="active" href="DataPeserta.html">
+        <img src="assest/user--identification.png" alt="Data Peserta Icon" />
+        <span>Data Peserta</span>
+      </a>
+      <a href="PesertaWorkshop.html">
+        <img src="assest/tool-box.png" alt="Peserta Workshop Icon" />
+        <span>Peserta Workshop</span>
+      </a>
+    </nav>
+  </aside>
+
+  <main class="main">
+
+    <header class="topbar">
+      <span class="page-title">Hallo Admin</span>
+
+      <div class="topbar-user">
+        <div class="user-badge">
+          <img src="assest/user.png" alt="User">
+          <span>Admin</span>
+        </div>
+
+        <a href="index.html" class="logout-btn">
+          <img src="assest/Span.png" alt="Logout">
+          <span>Keluar</span>
+        </a>
+      </div>
+    </header>
+
+      <main class="content">
+        <section class="participant-grid">
+
+          <article class="participant-card">
+            <div class="card-header">
+              <img src="assest/foto.png" class="avatar" />
+              <div class="card-actions">
+                <a href="javascript:void(0)"
+                  class="action-btn"
+                  onclick="hapusPeserta('peserta-1', 'Park Sungjin')">
+                  <img src="assest/trash-can.png" alt="delete">
+                </a>
+              </div>
+            </div>
+
+            <h3 class="name">Park Sungjin</h3>
+
+            <ul class="info">
+              <li><img src="assest/email.png" /> sungjinPark@gmail.com</li>
+              <li><img src="assest/checkmark--filled.png" /> Akun Aktif</li>
+              <li><img src="assest/calendar.png" /> 22 November 2025</li>
+              <li><img src="assest/user--role.png" /> Peserta</li>
+            </ul>
+          </article>
+          
+          <article class="participant-card">
+            <div class="card-header">
+              <img src="assest/foto.png" class="avatar" />
+              <div class="card-actions">
+                <a href="javascript:void(0)"
+                  class="action-btn"
+                  onclick="hapusPeserta('peserta-2', 'Kim Wonpil')">
+                  <img src="assest/trash-can.png" alt="delete">
+                </a>
+              </div>
+            </div>
+
+            <h3 class="name">Kim Wonpil</h3>
+
+            <ul class="info">
+              <li><img src="assest/email.png" /> kimPilwon@gmail.com</li>
+              <li><img src="assest/checkmark--filled.png" /> Akun Aktif</li>
+              <li><img src="assest/calendar.png" /> 24 Agustus 2025</li>
+              <li><img src="assest/user--role.png" /> Peserta</li>
+            </ul>
+          </article>
+
+        </section>
+      </main>
+
+    </div>
+  </div>
+<script src="app.js"></script>
+</body>
+</html>

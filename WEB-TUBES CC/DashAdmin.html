@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Admin</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+
+<div class="admin-layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <img src="assest/report.png" alt="Logo">
+      <span>WorkshopHub</span>
+    </div>
+
+    <nav class="sidebar-menu">
+      <a class="active" href="DashAdmin.html">
+        <img src="assest/laptop.png" alt="Dashboard Icon" />
+        <span>Dashboard Admin</span>
+      </a>
+      <a href="WorkshopList.html">
+        <img src="assest/list--boxes.png" alt="Workshop List Icon" />
+        <span>Workshop List</span>
+      </a>
+      <a href="DataPeserta.html">
+        <img src="assest/user--identification.png" alt="Data Peserta Icon" />
+        <span>Data Peserta</span>
+      </a>
+      <a href="PesertaWorkshop.html">
+        <img src="assest/tool-box.png" alt="Peserta Workshop Icon" />
+        <span>Peserta Workshop</span>
+      </a>
+    </nav>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <span class="page-title">Hallo Admin</span>
+
+      <div class="topbar-user">
+        <div class="user-badge">
+          <img src="assest/user.png" alt="User">
+          <span>Admin</span>
+        </div>
+
+        <a href="index.html" class="logout-btn">
+          <img src="assest/Span.png" alt="Logout">
+          <span>Keluar</span>
+        </a>
+      </div>
+    </header>
+
+    <section class="content">
+
+      <div class="summary">
+        <div class="card">
+          <div class="card-top">
+            <p>Total Workshop</p>
+            <a href="addList.html" class="card-icon blue">
+              <img src="assest/add.png" />
+            </a>
+          </div>
+          <h2 id="totalWorkshop">0</h2>
+        </div>
+        <div class="card">
+          <div class="card-top">
+            <p>Total Peserta</p>
+            <div class="card-icon green">
+              <img src="assest/peserta.png" />
+            </div>
+          </div>
+          <h2 id="totalPeserta">0</h2>
+        </div>
+        <div class="card">
+          <div class="card-top">
+            <p>Workshop Aktif</p>
+            <div class="card-icon purple">
+              <img src="assest/search.png" />
+            </div>
+          </div>
+          <h2 id="workshopAktif">0</h2>
+        </div>
+      </div>
+
+      <div class="table-card">
+        <div class="table-header">
+          <h3>Daftar Workshop</h3>
+          <input type="text" placeholder="Cari workshop..." />
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Peserta</th>
+              <th>Workshop</th>
+              <th>Tanggal Pelaksanaan</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <!-- DATA DARI DATABASE -->
+            <!--
+            <tr>
+              <td>Indi Viska</td>
+              <td>Cloud Security</td>
+              <td>2024-07-15</td>
+            </tr>
+            -->
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+  </div>
+
+</div>
+
+</body>
+</html>

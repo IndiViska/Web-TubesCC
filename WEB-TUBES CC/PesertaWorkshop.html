@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="admin.css" />
+  <title>Data Peserta</title>
+</head>
+
+<body>
+  <div class="layout">
+
+    <aside class="sidebar">
+    <div class="sidebar-brand">
+      <img src="assest/report.png" alt="Logo">
+      <span>WorkshopHub</span>
+    </div>
+
+    <nav class="sidebar-menu">
+      <a href="DashAdmin.html">
+        <img src="assest/laptop.png" alt="Dashboard Icon" />
+        <span>Dashboard Admin</span>
+      </a>
+      <a href="WorkshopList.html">
+        <img src="assest/list--boxes.png" alt="Workshop List Icon" />
+        <span>Workshop List</span>
+      </a>
+      <a href="DataPeserta.html">
+        <img src="assest/user--identification.png" alt="Data Peserta Icon" />
+        <span>Data Peserta</span>
+      </a>
+      <a class="active" href="PesertaWorkshop.html">
+        <img src="assest/tool-box.png" alt="Peserta Workshop Icon" />
+        <span>Peserta Workshop</span>
+      </a>
+    </nav>
+  </aside>
+
+  <main class="main">
+
+    <header class="topbar">
+      <span class="page-title">Hallo Admin</span>
+
+      <div class="topbar-user">
+        <div class="user-badge">
+          <img src="assest/user.png" alt="User">
+          <span>Admin</span>
+        </div>
+
+        <a href="index.html" class="logout-btn">
+          <img src="assest/Span.png" alt="Logout">
+          <span>Keluar</span>
+        </a>
+      </div>
+    </header>
+
+      <section class="content">
+        <h1 class="content-title">Peserta Workshop</h1>
+
+        <div class="table-wrapper">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Nama Peserta</th>
+                <th>Workshop</th>
+                <th>Tanggal Pelaksanaan</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Park Sungjin</td>
+                <td>Cloud Architecture</td>
+                <td>10 Oktober 2025</td>
+                <td class="status active">Aktif</td>
+              </tr>
+
+              <tr>
+                <td>Yoon Dowoon</td>
+                <td>Cloud Architecture</td>
+                <td>10 Oktober 2025</td>
+                <td class="status inactive">Tidak Aktif</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
